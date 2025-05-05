@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Libre+Baskerville:wght@400;700&display=swap'); */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,600;1,400&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat&display=swap");
+/* .cal-sans {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+} */
+.dm-serif {
+  font-family: "DM Serif Text", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.bounce {
+  animation: bounceUpDown 3s infinite ease-in-out;
+}
+
+.link {
+  /* @apply after:left-1/2 after:-translate-x-1/2 hover:after:w-full */
+  @apply hover:text-gray-600;
+}
+
+@keyframes bounceUpDown {
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
