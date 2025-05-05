@@ -1,7 +1,7 @@
 import Icon from "@/components/icon";
 import Link from "@/node_modules/next/link";
 
-const Nav: React.FC<Props> = () => (
+const Nav: React.FC = () => (
   <div className="flex px-[1rem]">
     <NavComponent cls="flex mr-auto" href="/">
       <span className="pr-2 my-auto font-bold">GemsLk</span>

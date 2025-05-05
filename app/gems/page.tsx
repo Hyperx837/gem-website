@@ -9,7 +9,7 @@ interface Props {
   price?: string;
 }
 
-const Gem = ({ name, children, img, price: web }: Props) => (
+const Gem = ({ children }: Props) => (
   <div className="w-72 h-[30rem]  flex flex-col rounded-lg shadow-lg  overflow-clip pb-7">
     <div className="min-h-[15rem] bg-blue-200 grid justify-items-center">
       {/* <Image src={`/images/gems/${img}`} layout="fill" alt={name} /> */}
@@ -18,7 +18,7 @@ const Gem = ({ name, children, img, price: web }: Props) => (
     <div className="flex flex-col w-10/12 mx-auto h-full pt-[1rem]">
       <p className="text-slate-700 montserrat text-[1.1rem]">{children}</p>
       <span className="mt-auto font-semibold dm-serif cursor-pointer text-right text-[1.4rem]">
-        {/* {web} */}
+        {/* {price} */}
         RS. 99%
       </span>
     </div>
@@ -36,7 +36,7 @@ const Projects: NextComponentType = () => (
         A website made for a temple located in Sri Lanka
       </Gem>
       <Gem name="Insta Unfollower" img="insta.png">
-        Returns the accounts that doesn't follow back the given account as json
+        Returns the accounts that doesnt follow back the given account as json
       </Gem>
       <Gem
         name="Technicolor"

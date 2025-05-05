@@ -2,12 +2,10 @@ import Link from "@/node_modules/next/link";
 
 const Button = ({
   children,
-  bg,
   className,
 }: Readonly<{
   children: React.ReactNode;
   className?: string;
-  bg?: string;
 }>) => (
   <Link href="/products">
     <button
